@@ -37,6 +37,7 @@ namespace Shoes
                     CurrentUser = user;
                     IsGuest = false;
                     this.DialogResult = DialogResult.OK;
+                    this.Close();
                 }
                 else
                 {
