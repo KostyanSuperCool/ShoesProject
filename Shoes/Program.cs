@@ -1,3 +1,5 @@
+using Microsoft.VisualBasic.ApplicationServices;
+
 namespace Shoes
 {
     internal static class Program
@@ -33,6 +35,8 @@ namespace Shoes
                     }
                 }
             }
+            ApplicationConfiguration.Initialize();
+            Application.Run(new FormGoodsOrOrder());
         }
     }
 }

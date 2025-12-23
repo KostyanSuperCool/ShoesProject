@@ -125,5 +125,6 @@
         private DataGridView dgvProduct;
         private Label lblUserName;
         private Button btnLogut;
+        private Button btnLogin;
     }
 }

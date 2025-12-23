@@ -34,9 +34,11 @@ namespace Shoes
                     .FirstOrDefault();
                 if (user != null)
                 {
+                    FormGoodsOrOrder form = new FormGoodsOrOrder();
                     CurrentUser = user;
                     IsGuest = false;
                     this.DialogResult = DialogResult.OK;
+                    form.ShowDialog();
                     this.Close();
                 }
                 else
