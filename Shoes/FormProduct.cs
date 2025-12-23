@@ -54,6 +54,7 @@ namespace Shoes
                         .Include(i => i.Manufacturer)
                         .Include(i => i.Supplier)
                         .Include(i => i.Measure)
+                        .Include(i => i.ProductType)
                         .ToList();
 
                     dgvProduct.SuspendLayout();
@@ -74,6 +75,9 @@ namespace Shoes
                         ApplyRowStyles(row, product);
 
                     }
+
+                    dgvProduct.ResumeLayout();
+                    dgvProduct.AutoResizeRows(DataGridViewAutoSizeRowsMode.AllCells);
                 }
 
             }

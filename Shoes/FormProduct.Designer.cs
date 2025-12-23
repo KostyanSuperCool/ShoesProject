@@ -77,9 +77,11 @@
             // 
             dgvProduct.AllowUserToAddRows = false;
             dgvProduct.AllowUserToDeleteRows = false;
+            dgvProduct.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgvProduct.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
             dgvProduct.BackgroundColor = Color.White;
             dgvProduct.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvProduct.ColumnHeadersVisible = false;
             dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = SystemColors.Window;
             dataGridViewCellStyle1.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 204);
